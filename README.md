@@ -25,7 +25,8 @@ Meet Alex, a UTD student prepping for a semester in Tokyo. Alex set a $2000 budg
 5) Additional Features - dark mode? predictive insights? reccomendations? 
 
 # Tech Stack
-Backend: Django, Python, *libraries: Currency Conversion, Data Manipulation, Numerical Operations   
+Backend: Django, Python     
+libraries: Currency Conversion, Data Manipulation, Numerical Operations     
 Front-end: React-Native  
 API's: Stripe  
 Database Management: PostgreSQL  
