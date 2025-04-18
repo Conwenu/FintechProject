@@ -10,6 +10,8 @@ import LoginScreen from "../screens/SignIn/LoginScreen";
 import RegisterScreen from "../screens/Register/RegisterScreen";
 import SignInScreen from "../screens/SignIn/SignIn";
 import SignUpScreen from "../screens/Register/SignUp";
+import InitialSettingCurrency from "../screens/InitialSetting/InitialSettingCurrency";
+import InitialSettingBudget from "../screens/InitialSetting/InitialSettingBudget";
 import { View, Text } from "react-native";
 import Splash from "../screens/Splash/Splash";
 import { TabLayout } from "./tabs";
@@ -62,6 +64,8 @@ export const AppStack = () => {
   const navigation = useNavigation();
   return (
     <Stack.Navigator screenOptions={() => navOptions(navigation)}>
+      <Stack.Screen name="InitialSettingCurrency" component={InitialSettingCurrency} />
+      <Stack.Screen name="InitialSettingBudget" component={InitialSettingBudget} />
       <Stack.Screen name="HomeTabs" component={TabLayout} />
     </Stack.Navigator>
   )
