@@ -62,6 +62,16 @@ const InitialSettingCurrency = () => {
     </TouchableOpacity>
   );
 
+  const handleNext = () => {
+    if (mainCurrency) {
+      // 선택된 통화 정보를 저장하고 다음 화면으로 이동
+      navigation.navigate('InitialSettingBudget', {
+        mainCurrency: mainCurrency,
+        additionalCurrencies: additionalCurrencies
+      });
+    }
+  };
+
   if (loading) {
     return (
       <View style={styles.container}>

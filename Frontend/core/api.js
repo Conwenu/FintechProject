@@ -12,3 +12,13 @@ const api = axios.create({
 })
 
 export default api
+
+
+// api endpoint for initial setting page
+export const saveCurrencySettings = (data) => {
+	return api.post('/api/settings/currency');
+};
+
+export const saveBudgetSettings = (data) => {
+	return api.post('/api/settings/budget');
+};
